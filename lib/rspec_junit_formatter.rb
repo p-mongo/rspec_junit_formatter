@@ -68,8 +68,8 @@ private
     output << %{ classname="#{escape(classname_for(example))}"}
     output << %{ name="#{escape(description_for(example))}"}
     output << %{ file="#{escape(file_path_for(example) || example_group_file_path_for(example))}"}
-    if line = line_for(example)
-      output << %{ line="#{escape(line.to_s)}"}
+    if line_number = line_number_for(example)
+      output << %{ line="#{escape(line_number.to_s)}"}
     end
     if scoped_id = scoped_id_for(example)
       output << %{ scoped-id="#{escape(scoped_id)}"}

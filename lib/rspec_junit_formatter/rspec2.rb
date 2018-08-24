@@ -29,7 +29,7 @@ private
     nil
   end
 
-  def line_for(notification)
+  def line_number_for(notification)
     nil
   end
 

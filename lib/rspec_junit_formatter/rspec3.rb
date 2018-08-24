@@ -59,8 +59,8 @@ private
     notification.example.metadata[:file_path]
   end
 
-  def line_for(notification)
-    notification.example.metadata[:line]
+  def line_number_for(notification)
+    notification.example.metadata[:line_number]
   end
 
   def scoped_id_for(notification)
