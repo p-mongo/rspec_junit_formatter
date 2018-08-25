@@ -12,9 +12,11 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.0.0"
   s.required_rubygems_version = ">= 2.0.0"
 
-  s.metadata = {
-    'changelog_uri' => 'https://github.com/sj26/rspec_junit_formatter/blob/master/CHANGELOG.md',
-  }
+  if s.respond_to?(:metadata=)
+    s.metadata = {
+      'changelog_uri' => 'https://github.com/sj26/rspec_junit_formatter/blob/master/CHANGELOG.md',
+    }
+  end
 
   # https://github.com/rspec/rspec-core/commit/f06254c00770387e3a8a2efbdbc973035c217f6a
   s.add_dependency "rspec-core", ">= 2", "< 4", "!= 2.12.0"
